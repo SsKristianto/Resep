@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 29, 2024 at 03:27 PM
+-- Generation Time: Mar 01, 2024 at 04:52 AM
 -- Server version: 10.4.28-MariaDB
--- PHP Version: 8.0.28
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,7 +41,9 @@ INSERT INTO `bookmarks` (`user_id`, `resep_id`) VALUES
 (6, 2),
 (6, 1),
 (4, 1),
-(4, 71);
+(4, 71),
+(4, 72),
+(4, 1);
 
 -- --------------------------------------------------------
 
@@ -62,7 +64,7 @@ CREATE TABLE `resep` (
 --
 
 INSERT INTO `resep` (`resep_id`, `nama_resep`, `deskripsi_resep`, `bahan`, `gambar`) VALUES
-(1, 'test edit', 'test edit', 'test edit', 'gambar/ayamgoreng38.jpeg'),
+(1, 'testing up', 'ads', 'asd', 'gambar/ayampop9.jpeg'),
 (2, 'test edit 2', 'test edit 2', 'test edit 2', 'gambar/ayamgoreng41.jpeg'),
 (4, 'Ayam Goreng', 'Ayam Goreng adalah hidangan tradisional Indonesia yang sangat populer dan menjadi salah satu kuliner yang dicintai di seluruh nusantara. Hidangan ini terdiri dari potongan ayam yang digoreng hingga kulitnya menjadi renyah dan berwarna kecoklatan. Sebelum digoreng, ayam biasanya direndam atau diremas dalam bumbu yang dapat mencakup bawang putih, ketumbar, garam, dan merica untuk memberikan cita rasa yang khas. Metode ini memberikan ayam goreng karakteristiknya yang gurih dan berbumbu. Ayam goreng sering dihidangkan bersama nasi putih dan sambal sebagai pelengkap. Hidangan ini bisa ditemui di warung-warung kaki lima, restoran, hingga rumah makan di seluruh Indonesia. Karena kelezatannya, ayam goreng juga sering dijadikan hidangan dalam acara-acara khusus, pesta, atau acara keluarga.', 'Bahan-bahan:\n1 kg Ayam, cuci bersih dan potong sesuai selera\n2 Bonggol bawang putih\n1 butir telur ayam\n3 sdm tepung maizena\n1/2 sdt garam\n1/4 sdt kaldu bubuk\nSecukupnya minyak goreng untuk menggoreng\nBumbu Halus:\n6 siung Bawang putih\n5 siung Bawang Merah\n1 sdt ketumbar bubuk\n1/2 sdt merica bubuk\n1 sdt kunyit bubuk\n1,5 ruas jari jahe\nCara Membuat:\nLangkah 1\nCuci ayam hingga bersih kemudian tiriskan masukan bumbu halus, garam, kaldu bubuk, tepung maizena & telur..aduk hingga tercampur rata.\nLangkah 2\nDiamkan kurang lebih 30 menit di kulkas supaya bumbu meresap (supaya lebih meresap lagi sebaiknya marinasi semalaman di dalam kulkas).\nLangkah 3\nPanaskan minyak goreng kemudian goreng bawang putih hingga kuning & garing, tiriskan. (Usahakan minyak cukup sampai ayam tenggelam saat digoreng)\nLangkah 4\nKemudian goreng ayam hingga coklat keemasan & matang merata (saya pakai api kecil saja) untuk ayamnya goreng bertahap jangan sekali goreng semuanya angkat & tiriskan.\nLangkah 5\nAyam goreng siap di sajikan', ''),
 (5, 'Ayam Pop ', 'Ayam Pop adalah hidangan tradisional Indonesia yang berasal dari Betawi, Jakarta. Hidangan ini terkenal karena metodenya yang unik dalam memasak ayam. Ayam Pop dimasak dengan cara dipanggang atau digoreng secara kering tanpa menggunakan bumbu basah atau kuah. Ayam Pop biasanya disajikan dengan kulit yang renyah dan daging ayam yang empuk. Sebelum dimasak, ayam diolah dengan cara diremas menggunakan bumbu kering seperti garam, lada, ketumbar, dan bumbu lainnya. Setelah itu, ayam dipanggang atau digoreng hingga matang dan kulitnya berubah menjadi kecoklatan. Hidangan ini sering dihidangkan dalam potongan kecil yang mudah dinikmati. Ayam Pop biasanya disajikan dengan lalapan, sambal, dan nasi putih. Kelezatan dan keunikannya membuat Ayam Pop menjadi salah satu hidangan yang disukai oleh banyak orang di Indonesia.', 'Bahan-bahan :\n1 ekor ayam kampung (bisa pake ayam pejantan)\n4 bh sereh, geprek\n2 ruas jahe, iris2\n50 ml santan instan\n1 liter air kelapa\n4 sdt garam\n7-8 siung bawang putih, digeprek\nBahan kuah putih :\nSisa air ungkepan ayam\n100 ml santan\n2 sdm tepung terigu larutkan dengan sedikit air\n🍗 Bahan utk sambal ayam pop\n3 lembar daun jeruk\n1/2 sdt terasi\n50 ml santan instan\n1 sdt garam\n1 sdt kaldu bubuk (sy pake kaldu jamur)\n2 sdm saus tomat\n2 sdt gula\nMinyak secukupnya utk menumis\nBumbu halus :\n1 bh tomat merah\n8-10 cabe merah keriting\n8 siung bwg merah\n6 sg bawang putih\nCara Membuat :\nLangkah 1\nPertama tama bersihkan ayam lalu taruh wajan, masukkan 1 liter air kelapa, jahe iris, sereh geprek, bwg putih geprek, 50 ml santan, dan 4 sdt garam...\nLangkah 2\nTutup lalu ungkep ayam dengan api kecil sedang aja selama 1 jam hingga ayam empuk (Sisakan 1/2 air ungkepan)\nLangkah 3\nSambil menunggu ayamnya di ungkep... Buat sambalnya dengan cara menghaluskan menggunakan blender 1 bh tomat, bwg merah, putih, dan cabe keriting dengan dikasih sedikit minyak.... Blend sampai benar2 halus....\nLangkah 4\nPanaskan wajan dengan sedikit minyak lalu tumis bumbu halus bersama dengan daun jeruk... Masak dengan api kecil hingga matang dan mengeluarkan minyak\nLangkah 5\nSetelah mengeluarkan minyak masukkan 50 ml santan instan dan air secukupnya lalu tambahkan garam, gula, kaldu bubuk/kaldu jamur, saus tomat, 1/2 sdt terasi... Aduk rata.. Masak hingga mengental dn matang\nLangkah 6\nSaring sambal utk mendapatkan tekstur yg lembut... Siap disajikan\nLangkah 7\nUtk membuat kuah putih : campur air ungkepan ayam dengan 100 ml santan instan kemudian masukkan cairan tepung terigu nya.. Aduk rata hingga mengental dan meletup letup... Matikan api\nLangkah 8\nGoreng ayam yg sudah di ungkep tadi dengan sedikit minyak sebentar saja \nLangkah 9\nTaruh ayam di piring lalu siram dengan kuah putih dan juga sambalnya... Siap disajikan', ''),
@@ -97,7 +99,7 @@ INSERT INTO `resep` (`resep_id`, `nama_resep`, `deskripsi_resep`, `bahan`, `gamb
 (33, 'Telur balado', 'Telur balado merupakan salah satu hidangan khas Minangkabau, Sumatra Barat. Hidangan ini umumnya terdiri dari telur yang direbus, digoreng, atau direbus setengah matang, yang kemudian disajikan dengan saus balado. Saus balado adalah saus pedas khas Indonesia yang terbuat dari cabai, bawang, tomat, dan bumbu-bumbu lainnya. Saus ini memberikan rasa pedas, manis, dan sedikit asam, menciptakan kombinasi cita rasa yang menggugah selera. Telur balado sering dihidangkan sebagai lauk pendamping nasi putih dan merupakan hidangan yang populer di seluruh Indonesia, terutama bagi mereka yang menyukai makanan pedas. Kelezatan telur balado juga sering membuatnya menjadi pilihan dalam masakan sehari-hari dan acara-acara khusus.\r\n', 'Bahan-bahan:\n3 butir Telur rebus\n10 buah Cabe kriting merah\n4 butir Bamer (Bawang merah)\n2 siung Baput (Bawang putih), saya skip\n1 buah Tomat\n1/2 sdt Garam\n2 biji Asam jawa; larutkan dalam 1 sdm Air, buang bijinya\nSecukupnya Minyak goreng\nCara Membuat:\nLangkah 1\nGoreng Telur sebentar hingga bagian luarnya kecoklatan. Angkat, kemudian tiriskan.\nLangkah 2\nGiling Cabe dan Garam menggunakan cobek, setengah halus tambahkan Bamer dan Tomat. Lalu giling lagi hingga halus. 📝 Noted:\nBalado khas Minang, menggiling bumbunya pakai cobek. Jangan pakai blender.\nLangkah 3\nMasukan cabe giling ke minyak sisa goreng telur tadi, lalu tambahkan air Asam. Aduk. Tes rasa. Masak hingga matang tanak. Kemudian masukan telur yang sudah di goreng. Aduk rata. Masak hingga bumbu meresap. Angkat.\nLangkah 4\nTelur Balado khas Minang pun siap disajikan. ', ''),
 (34, 'Telur Dadar', 'Telur Dadar memiliki banyak vasiasi salah satunya yaitu telur dadar khas dari daerah Padang, Sumatra Barat. Telur dadar ini memiliki ciri khas rasa pedas dan gurih yang menggoda selera. Bahan utama dalam Telur Dadar Padang adalah telur yang dikocok dan dicampur dengan bumbu-bumbu khas, seperti cabai merah, bawang merah, bawang putih, kunyit, ketumbar, dan daun bawang. Campuran telur dan bumbu tersebut kemudian dipanaskan dalam wajan atau penggorengan hingga matang dan berbentuk dadar tipis. Telur dadar Padang sering dihidangkan sebagai lauk pendamping nasi putih dalam hidangan makanan Padang atau dikenal sebagai \"nasi Padang.\" Rasa gurih, pedas, dan rempah-rempah yang khas membuat Telur Dadar Padang menjadi hidangan yang populer di seluruh Indonesia. Hidangan ini sering dijumpai di restoran Padang dan warung makan tradisional yang menyajikan masakan khas Minangkabau.\r\n', 'Bahan-bahan :\n3 butir Telur Bebek\n5 sdm Kelapa Parut\n3 sdm Tepung Beras\n2 batang Daun Bawang, iris, saya skip, habis\n1 batang Seledri, iris\nBumbu halus :\n3 siung Bawang Merah\n2 siung Bawang Putih\n1 butir Kemiri\n1/4 sdt Ketumbar bubuk\n4 buah Cabai Merah Keriting\n1/4 sdt Kunyit bubuk\n1/2 sdt Lada bubuk\n1 sdt Garam\n1/2 sdt Kaldu bubuk\nCara Membuat:\nLangkah 1\nSangrai kelapa sampai sedikit kekuningan, sisihkan. Saya pakai kelapa bekas ayam bumbu.\nLangkah 2\nSiapkan wadah, pecahkan telur bebek, masukkan bumbu halus, tepung beras, kelapa sangrai, daun bawang & daun seledri, garam, lada bubuk, dan kaldu bubuk aduk rata\nLangkah 3\nPanaskan minyak (minyak jangan terlalu banyak & terlalu sedikit). Setelah minyak benar-benar panas tuang telur dan kecilkan api supaya telur tidak cepat gosong. Diamkan saja jangan diaduk-aduk. Setelah cukup kokoh balik telur dan diamkan kembali sampai matang.\nLangkah 4\nSetelah telur matang, tiriskan terlebih dahulu baru kemudian dipotong-potong. Telur dadar khas Padang siap disajikan. ', ''),
 (35, 'Wajik', 'Wajik adalah salah satu makanan tradisional Indonesia yang terkenal. Makanan ini biasanya dibuat dari bahan dasar ketan yang direbus dan dicampur dengan kelapa parut serta gula merah. Wajik memiliki cita rasa manis dan kenyal dengan aroma khas kelapa parut. Makanan ini sering dihidangkan sebagai cemilan tradisional atau kue pada berbagai acara dan perayaan, seperti hari raya atau pernikahan. Keunikan dan kelezatan wajik membuatnya menjadi favorit di berbagai daerah di Indonesia, dan variasi resep dapat ditemukan tergantung pada tradisi lokal masing-masing.\r\n', 'Bahan-bahan:\n1/2 liter beras ketan,cuci bersih\n65 ml santan kental instan\n300 ml air\n200 gr gula merah,sisir\n1 sdm gula pasir\n1/2 sdt garam\n1 lembar daun pandan\nCara Membuat:\nLangkah 1\nDalam wajan campur gula merah, gula pasir,air,santan,daun pandan lalu rebus sampai gula larut dan mendidih.\nLangkah 2\nSetelah santan mendidih masukkan beras ketan masak sampai santan menyusut.\nLangkah 3\nPanaskan kukusan lalu kukus ketan selama 30menit.\nLangkah 4\nTuang ketan kedalam wadah yang sudah dialasi daun pisang/plastik,lalu ratakan dan padatkan. Diamkan sampai set.\nLangkah 5\nSetelah set lalu potong2 dengan pisau yang dilapisi plastik supaya tidak nempel. Siap dinikmati.', ''),
-(71, 'Telur Dadar', 'e', 'e', 'gambar/telurdadar5.jpeg');
+(75, 'up foto', 'up', 'up', 'gambar/telurdadar42.jpeg');
 
 -- --------------------------------------------------------
 
@@ -123,7 +125,8 @@ INSERT INTO `user` (`user_id`, `username`, `name`, `role`, `password`) VALUES
 (3, 'cava1912', 'Achmad Kahlil Gibran', 'user', 'Indomiegoreng19'),
 (4, 'test1', 'test', 'user', 'test1'),
 (6, 'Kadaha', 'Akhmad Aditya Rachman', 'user', 'baksotanpatepung'),
-(7, 'test2', 'test2', 'user', 'test2');
+(7, 'test2', 'test2', 'user', 'test2'),
+(8, 'ee', 'testregis', 'user', 'ee');
 
 -- --------------------------------------------------------
 
@@ -176,13 +179,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `resep`
 --
 ALTER TABLE `resep`
-  MODIFY `resep_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `resep_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
