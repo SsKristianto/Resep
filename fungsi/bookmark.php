@@ -16,7 +16,7 @@ if(isset($_POST['tambahBookmark'])) {
     $resep_id = $_POST['resep_id'];
     
     tambahBookmark($data, $user_id, $resep_id);
-    header("Location: userpage.php");
+    header("Location: ../userpage.php");
     exit();
 }
 

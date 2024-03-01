@@ -35,7 +35,7 @@ $result = mysqli_query($data, $sql);
             <a href="userpage.php">Home</a>
             <a href="userprofile.php">Profile</a>
             <a href="userbookmark.php">Bookmark</a>
-            <a href="logout.php">Logout</a>
+            <a href="../Resep/fungsi/logout.php">Logout</a>
             <input type="text" placeholder="Search..">
         </div>
     </header>
@@ -49,7 +49,7 @@ $result = mysqli_query($data, $sql);
                 echo '<div class="grid-item">';
                 echo '<img src="' . $row['gambar'] . '" alt="Image">';
                 echo '<h3>' . $row['nama_resep'] . '</h3>';
-                echo '<form method="post" action="bookmark.php">';
+                echo '<form method="post" action="../Resep/fungsi/bookmark.php">';
                 echo '<input type="hidden" name="resep_id" value="' . $row['resep_id'] . '">';
                 echo '<input type="hidden" name="user_id" value="' . $_SESSION['user_id'] . '">';
                 echo '<input type="submit" name="tambahBookmark" value="Tambah Bookmark">';

@@ -30,11 +30,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
         if($row["role"]=="user")
         {
-            header("location:userpage.php");
+            header("location:../userpage.php");
         }
         elseif($row["role"]=="admin")
         {
-            header("location:adminpage.php");
+            header("location:../adminpage.php");
         }
     }
     else

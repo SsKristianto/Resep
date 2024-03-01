@@ -11,14 +11,14 @@
 <body>
 
 <header class="header-admin">
-<h1>Admim Page</h1>
+<h1>Admin Page</h1>
 
     <div class="topnav">
     <a href="adminpage.php">Home</a>
     <a href="adminprofile.php">Profile</a>
     <a href="admintambah.php">Tambah Resep</a>
     <a href="adminedit.php">Edit Resep</a>
-    <a href="logout.php">Logout</a>
+    <a href="../Resep/fungsi/logout.php">Logout</a>
     <input type="text" placeholder="Search..">
     </div>
 
@@ -27,7 +27,7 @@
 <div class="tambah-admin">
 <h1>Tambah Resep</h1>
 
-    <form action="tambahresep.php" method="POST" enctype="multipart/form-data">
+    <form action="../Resep/fungsi/tambahresep.php" method="POST" enctype="multipart/form-data">
         <label>Nama Resep :</label>
         <input type="text" name="nama_resep"><br><br>
 

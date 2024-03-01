@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = mysqli_query($data, $sql);
 
     if ($result) {
-        header('location:adminpage.php');
+        header('location:../adminpage.php');
     }
 }
 ?>
