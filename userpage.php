@@ -1,5 +1,5 @@
 <?php
-include 'C:/xampp/htdocs/Pemweb/Resep/fungsi/bookmark.php';
+include 'C:/xampp/htdocs/Resep/fungsi/bookmark.php'; //ubah sesuai letak foldernya
 
 if(!isset($_SESSION['username'])) {
     header("location:login.php");

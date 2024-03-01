@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $gambar_baru = $_FILES['gambar_baru'];
             $gambar_baru_name = $_FILES['gambar_baru']['name'];
             $gambar_baru_tmp = $_FILES['gambar_baru']['tmp_name'];
-            $gambar_baru_destination = 'gambar/' . $gambar_baru_name;
+            $gambar_baru_destination = '../gambar/'.$gambar_baru_name;
 
             move_uploaded_file($gambar_baru_tmp, $gambar_baru_destination);
 
@@ -31,10 +31,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($result) {
             header('location:../adminpage.php');
         } else {
-            echo "Error updating recipe: " . mysqli_error($data);
+            echo "Error Update Resep: " . mysqli_error($data);
         }
     } else {
-        echo "Form data is incomplete.";
+        echo "Belum Ada Isi";
     }
 }
 ?>
