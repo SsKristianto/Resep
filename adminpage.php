@@ -50,8 +50,8 @@ $result = mysqli_query($data, $sql);
             <?php
             while ($row = mysqli_fetch_assoc($result)) {
                 echo '<div class="grid-item">';
-                echo '<img src="' . $row['gambar'] . '" alt="Image">';
-                echo '<h3>' . $row['nama_resep'] . '</h3>';
+                echo '<a href="detailresep.php?id=' . $row['resep_id'] . '"><img src="' . $row['gambar'] . '" alt="Image"></a>';
+                echo '<h3><a href="detailresep.php?id=' . $row['resep_id'] . '">' . $row['nama_resep'] . '</a></h3>';
                 echo '</div>';
             }
             ?>
