@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $gambar_baru_tmp = $_FILES['gambar_baru']['tmp_name'];
             $gambar_baru_destination = 'gambar/'.$gambar_baru_name;
 
-            move_uploaded_file($gambar_baru_tmp, $gambar_baru_destination);
+            move_uploaded_file($gambar_baru_tmp, '../gambar/'.$gambar_baru_name);
 
             $sql = "UPDATE resep SET nama_resep='$nama_resep', deskripsi_resep='$deskripsi_resep', bahan='$bahan', gambar='$gambar_baru_destination' WHERE resep_id='$resep_id'";
         } else {

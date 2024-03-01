@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $gambar_tmp = $_FILES['gambar']['tmp_name'];
     $gambar_destination = 'gambar/'.$gambar_name;
     
-    move_uploaded_file($gambar_tmp, $gambar_destination);
+    move_uploaded_file($gambar_tmp, '../gambar/'.$gambar_baru_name);
 
     $sql = "INSERT INTO resep (nama_resep, deskripsi_resep, bahan, gambar) 
     VALUES 
