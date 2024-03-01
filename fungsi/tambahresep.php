@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $gambar = $_FILES['gambar'];
     $gambar_name = $_FILES['gambar']['name'];
     $gambar_tmp = $_FILES['gambar']['tmp_name'];
-    $gambar_destination = '../gambar/'.$gambar_name;
+    $gambar_destination = 'gambar/'.$gambar_name;
     
     move_uploaded_file($gambar_tmp, $gambar_destination);
 

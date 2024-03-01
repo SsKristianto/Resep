@@ -1,5 +1,5 @@
 <?php
-include 'C:/xampp/htdocs/Pemweb/Resep/fungsi/bookmark.php';
+include 'C:/xampp/htdocs/Resep/fungsi/bookmark.php';
 
 if(!isset($_SESSION['username'])) {
     header("location:login.php");
@@ -34,7 +34,7 @@ $bookmark_result = lihatBookmark($data, $user_id);
             <a href="userpage.php">Home</a>
             <a href="userprofile.php">Profile</a>
             <a href="userbookmark.php">Bookmark</a>
-            <a href="../Resep/fungsi/logout.php">Logout</a>
+            <a href="fungsi/logout.php">Logout</a>
             <input type="text" placeholder="Search..">
         </div>
     </header>

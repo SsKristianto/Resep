@@ -18,7 +18,7 @@
         <a href="adminprofile.php">Profile</a>
         <a href="admintambah.php">Tambah Resep</a>
         <a href="adminedit.php">Edit Resep</a>
-        <a href="../Resep/fungsi/logout.php">Logout</a>
+        <a href="fungsi/logout.php">Logout</a>
         <input type="text" placeholder="Search..">
         </div>
 

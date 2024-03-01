@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['select_resep'])) {
             <a href="adminprofile.php">Profile</a>
             <a href="admintambah.php">Tambah Resep</a>
             <a href="adminedit.php">Edit Resep</a>
-            <a href="../Resep/fungsi/logout.php">Logout</a>
+            <a href="fungsi/logout.php">Logout</a>
             <input type="text" placeholder="Search..">
         </div>
     </header>
@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['select_resep'])) {
     <div class="tambah-admin">
         <h1>EDIT</h1>
 
-    <form action="../Resep/fungsi/editresep.php" method="post" enctype="multipart/form-data">
+    <form action="fungsi/editresep.php" method="post" enctype="multipart/form-data">
         <label for="select_resep">Pilih Resep:</label>
         <select name="resep_id">
             <?php

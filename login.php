@@ -14,7 +14,7 @@
             <center class="title_deg">Login</center>
 
             
-            <form action="../Resep/fungsi/login_check.php" method="POST" class="login_form">
+            <form action="fungsi/login_check.php" method="POST" class="login_form">
                 <?php
 
                 error_reporting(0);

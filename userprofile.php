@@ -17,7 +17,7 @@
         <a href="userpage.php">Home</a>
         <a href="userprofile.php">Profile</a>
         <a href="userbookmark.php">Bookmark</a>
-        <a href="../Resep/fungsi/logout.php">Logout</a>
+        <a href="fungsi/logout.php">Logout</a>
         <input type="text" placeholder="Search..">
         </div>
 
