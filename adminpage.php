@@ -29,20 +29,46 @@ $result = mysqli_query($data, $sql);
     <title>Home</title>
 
     <link rel="stylesheet" href="adminpage.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+	<link href="css/recipes.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,900&display=swap" rel="stylesheet">
+   <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
     
-    <header class="header-admin">
-        <h1>Admin Page</h1>
-        <div class="topnav">
-            <a href="adminpage.php">Home</a>
-            <a href="adminprofile.php">Profile</a>
-            <a href="admintambah.php">Tambah Resep</a>
-            <a href="adminedit.php">Edit Resep</a>
-            <a href="fungsi/logout.php">Logout</a>
-            <input type="text" placeholder="Search..">
-        </div>
-    </header>
+<section id="header" class="clearfix">
+ <nav class="navbar navbar-default navbar-fixed-top">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+    	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="index.html"><span class="text_1">Nutrient</span></a>
+	</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav navbar-left">
+					<li><a href="adminpage.php">Home</a></li>
+					<li><a href="adminprofile.php">Profile</a></li>
+					<li><a href="admintambah.php">Tambah Resep</a></li>
+					<li><a href="adminedit.php">Edit Resep</a></li>
+					<li><a href="fungsi/logout.php">Logout</a></li>
+			</li>
+		  </ul>
+		  <ul class="navbar_1">
+          <input type="text" class="navbar-header" placeholder="Search..">
+		  </ul>
+			    </div><!-- /.navbar-collapse -->
+     <!-- /.container-fluid -->
+	</nav>
+</section>
     
     <div class="konten-admin">
         <p>Resep yang sering dilihat</p>
@@ -50,8 +76,10 @@ $result = mysqli_query($data, $sql);
             <?php
             while ($row = mysqli_fetch_assoc($result)) {
                 echo '<div class="grid-item">';
-                echo '<a href="detailresep.php?id=' . $row['resep_id'] . '"><img src="' . $row['gambar'] . '" alt="Image"></a>';
-                echo '<h3><a href="detailresep.php?id=' . $row['resep_id'] . '">' . $row['nama_resep'] . '</a></h3>';
+                echo '<div class="products_2">';
+                echo '<a href="detailadmin.php?id=' . $row['resep_id'] . '"><img src="' . $row['gambar'] . '" alt="Image"></a>';
+                echo '<h3><a href="detailadmin.php?id=' . $row['resep_id'] . '">' . $row['nama_resep'] . '</a></h3>';
+                echo '</div>';
                 echo '</div>';
             }
             ?>
