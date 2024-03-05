@@ -1,0 +1,145 @@
+/*
+Template Name:Nutrient
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+
+
+/********************* exercise ****************/
+#exercise{ 
+ padding-top: 15px;
+ padding-bottom: 50px;
+ }
+.exercise_1 h2 {
+ text-align:center;
+}
+.exercise_3 h2 {
+ text-align:center;
+}
+.content-top2 h4 {
+ font-size: 16px;
+ letter-spacing: 2px;
+ font-weight: bold;
+ color: #d11717;
+ padding-bottom:40px;
+}
+.content-top2 h4:before {
+ display: inline-block;
+ width: 100px;
+ height: 2px;
+ background-color:#b00808;
+ vertical-align: middle;
+ margin-right: 1%;
+ content: "";
+}
+.content-top2 h4:after {
+ display: inline-block;
+ width: 100px;
+ height: 2px;
+ background-color:#b00808;
+ vertical-align: middle;
+ margin-left: 1%;
+ content: "";
+}
+.exercise_1 p {
+ border-bottom: 1px solid #b008087a;
+ padding-bottom: 10px;
+}
+.exercise_2{ 
+ padding-top:10px;
+}
+.exercise_2 i{
+ font-size: 22px;
+ color: #db1111;
+ padding-bottom: 10px;
+ padding-right: 15px;
+}
+.exercise_2 p{
+ color: #54595f;
+}
+.exercise_2 p a{
+ font-size:18px;
+ color: #54595f;
+}
+.exercise_2 p a:hover{
+ color: #db1111;
+}
+.exercise_4 input {
+ padding-top: 20px;
+ padding-bottom: 20px;
+ margin-bottom: 10px;
+ width: 98%;
+ border-bottom:1px solid #999!important;
+}
+.exercise_5 textarea {
+ height: 155px;
+ width: 100%;
+ border-bottom:1px solid #999!important;
+}
+#exercise .form-control{ 
+ border:none;
+ -webkit-box-shadow:none;
+ box-shadow:none;
+ -webkit-transition:none;
+ transition:none;
+ font-size:18px;
+ }
+.exercise_6 p{
+ padding-top:30px;
+}
+/********************* exercise_end ****************/
+
+
+
+
+
+
+@media screen and (max-width : 767px){
+#exercise {
+ padding-bottom: 40px;
+ text-align: center;
+}
+.exercise_1 h2 {
+ font-size: 36px;
+}
+.content-top2 h4 { 
+ padding-bottom: 10px;
+}
+.exercise_3 h2 {
+ font-size: 36px;
+ padding-top: 10px;
+}
+}
+
+@media (min-width:470px) and (max-width:767px) { 
+}
+ 
+@media (min-width:768px) and (max-width:960px) { 
+.exercise_2 p {
+ font-size: 15px;
+}
+.exercise_2 {
+ padding-top: 3px;
+}
+.exercise_2 p a {
+ font-size: 15px;
+}
+} 
+ 
+@media (min-width:961px) and (max-width:1200px) {
+.exercise_2 p {
+ font-size: 15px;
+}
+.exercise_2 {
+ padding-top: 3px;
+}
+.exercise_2 p a {
+ font-size: 15px;
+}
+}
+
+@media (min-width:1201px) and (max-width:1320px) {
+
+}
