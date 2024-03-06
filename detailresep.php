@@ -29,22 +29,62 @@ $resep = mysqli_fetch_assoc($result);
     <title>Detail Resep</title>
 
     <link rel="stylesheet" href="userpage.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+	<link href="css/recipes-details.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,900&display=swap" rel="stylesheet">
+   <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
-<body>
-    <header class="header-user">
-        <h1>Detail Resep</h1>
-        <div class="topnav">
-            <a href="userpage.php">Home</a>
-            <a href="userprofile.php">Profile</a>
-            <a href="userbookmark.php">Bookmark</a>
-            <a href="fungsi/logout.php">Logout</a>
-            <input type="text" placeholder="Search..">
-        </div>
-    </header>
 
-    <div class="konten-user">
-        <h2><?php echo $resep['nama_resep']; ?></h2>
-        <img src="<?php echo $resep['gambar']; ?>" alt="Image">
+<body>
+<section id="header" class="clearfix">
+ <nav class="navbar navbar-default navbar-fixed-top">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+    	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="index.html"><span class="text_1">Nutrient</span></a>
+	</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav navbar-left">
+					<li><a href="userpage.php">Home</a></li>
+					<li><a href="userprofile.php">Profile</a></li>
+					<li><a href="userbookmark.php">Bookmark</a></li>
+					<li><a href="fungsi/logout.php">Logout</a></li>
+			</li>
+		  </ul>
+		  <ul class="navbar_1">
+          <input type="text" class="navbar-header" placeholder="Search..">
+		  </ul>
+			    </div><!-- /.navbar-collapse -->
+     <!-- /.container-fluid -->
+	</nav>
+</section>
+<section id="shop">
+ <div class="container">
+  <div class="row">
+   <div class="shop_1">
+    <h1>DETAIL RESEP</h1>
+	<div class=" content-top2">
+	 <h4 class="text-center"><i class="fa fa-star"></i></h4>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section id="products_main" class="clearfix">
+ <div class="col-sm-6">
+  <div class="products_main_1">
+   <h2><?php echo $resep['nama_resep']; ?></h2>
+        
         <p><?php echo $resep['deskripsi_resep']; ?></p>
         <h3>Bahan:</h3>
         <ul>
@@ -56,6 +96,19 @@ $resep = mysqli_fetch_assoc($result);
             }
             ?>
         </ul>
+  </div>
+ </div>
+ <div class="col-sm-6">
+  <div class="products_main_2">
+    <center>
+   <a href="#"><img src="<?php echo $resep['gambar']; ?>" alt="Image"></a>
+    </center>
+  </div>
+ </div>
+</section>
+
+    <div class="konten-user">
+        
     </div>
 
     <footer class="footer-user">
