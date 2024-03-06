@@ -41,7 +41,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     {
         $message= "Username or Password do not match!";
         $_SESSION['loginMessage']=$message;
-        header("location:login.php");
+        header("location:../login.php");
     }
 }
 ?>

@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     } else {
         // Jika user_id tidak sesuai, redirect ke halaman login atau halaman lain
-        header("Location: ../login.php");
+        header("Location: ../adminpage.php");
         exit;
     }
 }

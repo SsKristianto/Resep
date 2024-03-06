@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 05, 2024 at 08:22 AM
+-- Generation Time: Mar 06, 2024 at 10:16 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -44,7 +44,8 @@ INSERT INTO `bookmarks` (`user_id`, `resep_id`) VALUES
 (4, 71),
 (4, 72),
 (4, 1),
-(2, 4);
+(2, 4),
+(4, 4);
 
 -- --------------------------------------------------------
 
@@ -117,10 +118,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `username`, `name`, `role`, `password`) VALUES
-(1, 'admin', 'Achmad Kahlil Gibran', 'admin', 'admin12345'),
+(1, 'admin', 'Test', 'admin', 'admin12345'),
 (2, 'sSo12345', 'Adi Kristianto', 'user', 'sSosSo123'),
 (3, 'cava1912', 'Achmad Kahlil Gibran', 'user', 'Indomiegoreng19'),
-(4, 'test1', 'test', 'user', 'test1'),
+(4, 'test1', 'TESTCUMAN NAMA', 'user', 'cumanpassword'),
 (6, 'Kadaha', 'Akhmad Aditya Rachman', 'user', 'baksotanpatepung'),
 (7, 'test2', 'test2', 'user', 'test2'),
 (8, 'ee', 'testregis', 'user', 'ee');
