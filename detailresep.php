@@ -107,10 +107,6 @@ $resep = mysqli_fetch_assoc($result);
  </div>
 </section>
 
-    <div class="konten-user">
-        
-    </div>
-
     <footer class="footer-user">
         <p>INI FOOTER</p>
     </footer>

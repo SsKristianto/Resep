@@ -33,6 +33,14 @@ if(isset($_POST['register']))
     <title>Login Form</title>
 
     <link rel="stylesheet" href="loginregis.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+	<link href="css/recipes.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,900&display=swap" rel="stylesheet">
+   <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </head>
 <body class = "web">
@@ -58,12 +66,12 @@ if(isset($_POST['register']))
                 </div>
                 
                 <div>
-                    <input class="btn-primary" type="submit" name="register" value="Register">
+                    <input class="button_1" type="submit" name="register" value="Register">
                 </div>
 
                 <div>
-                    <input class="btn-primary" formaction="login.php" type="submit" name="submit" value="Back">
-                </div>
+                    <input class="button_1" formaction="login.php" type="submit" name="submit" value="Back">
+                </div></br>
             </form>
         </div>
     </center>
