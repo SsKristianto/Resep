@@ -17,6 +17,24 @@ $sql = "SELECT * FROM resep";
 $result = mysqli_query($data, $sql);
 ?>
 
+<script>
+        function search() {
+            var input, filter;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+
+            var gridItems = document.getElementsByClassName("grid-item");
+            for (var i = 0; i < gridItems.length; i++) {
+                var title = gridItems[i].getElementsByTagName("h3")[0].innerText.toUpperCase();
+                if (title.indexOf(filter) > -1) {
+                    gridItems[i].style.display = "";
+                } else {
+                    gridItems[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -58,7 +76,7 @@ $result = mysqli_query($data, $sql);
 			</li>
 		  </ul>
 		  <ul class="navbar_1">
-          <input type="text" class="navbar-header" placeholder="Search..">
+          <input type="text" class="navbar-header" id="searchInput" onkeyup="search()" placeholder="Search..">
 		  </ul>
 			    </div><!-- /.navbar-collapse -->
      <!-- /.container-fluid -->
