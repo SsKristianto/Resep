@@ -67,6 +67,7 @@ $resep = mysqli_fetch_assoc($result);
 			    </div><!-- /.navbar-collapse -->
      <!-- /.container-fluid -->
 	</nav>
+    
 </section>
 <section id="shop">
  <div class="container">
@@ -80,12 +81,15 @@ $resep = mysqli_fetch_assoc($result);
   </div>
  </div>
 </section>
+
 <section id="products_main" class="clearfix">
  <div class="col-sm-6">
   <div class="products_main_1">
    <h2><?php echo $resep['nama_resep']; ?></h2>
         
+    
         <p><?php echo $resep['deskripsi_resep']; ?></p>
+
         <h3>Bahan:</h3>
         <ul>
             <?php
@@ -98,6 +102,7 @@ $resep = mysqli_fetch_assoc($result);
         </ul>
   </div>
  </div>
+
  <div class="col-sm-6">
   <div class="products_main_2">
     <center>
@@ -105,6 +110,7 @@ $resep = mysqli_fetch_assoc($result);
     </center>
   </div>
  </div>
+
 </section>
 
     <footer class="footer-user">

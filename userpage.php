@@ -16,24 +16,62 @@ $data = mysqli_connect($host, $user, $password, $db);
 $sql = "SELECT * FROM resep";
 $result = mysqli_query($data, $sql);
 ?>
-
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 <script>
-        function search() {
-            var input, filter;
-            input = document.getElementById("searchInput");
-            filter = input.value.toUpperCase();
-
-            var gridItems = document.getElementsByClassName("grid-item");
-            for (var i = 0; i < gridItems.length; i++) {
-                var title = gridItems[i].getElementsByTagName("h3")[0].innerText.toUpperCase();
-                if (title.indexOf(filter) > -1) {
-                    gridItems[i].style.display = "";
-                } else {
-                    gridItems[i].style.display = "none";
+        $(document).ready(function() {
+    $('#searchInput').on('input', function() {
+        var keyword = $(this).val();
+        if (keyword.length > 2) {
+            $.ajax({
+                url: 'search.php',
+                type: 'GET',
+                data: { keyword: keyword },
+                dataType: 'json',
+                success: function(data) {
+                    displaySearchResults(data);
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error:', error);
                 }
-            }
+            });
+        } else {
+            // Jika searchInput kosong, kembalikan ke halaman default
+            $('.grid-container').empty(); // Menghapus hasil pencarian sebelumnya
+            // Tampilkan kembali konten default jika ada
+            // ... (kode untuk menampilkan konten default) ...
         }
-    </script>
+    });
+
+    function displaySearchResults(data) {
+        var resultsContainer = $('.grid-container');
+        resultsContainer.empty(); // Menghapus hasil pencarian sebelumnya
+
+        data.forEach(function(item) {
+            var gridItem = $('<div>').addClass('grid-item');
+            var products = $('<div>').addClass('products_2');
+
+            var link = $('<a>').attr('href', 'detailresep.php?id=' + item.resep_id);
+            var img = $('<img>').attr('src', item.gambar).attr('alt', 'Image');
+            link.append(img);
+
+            var h3 = $('<h3>');
+            var h3Link = $('<a>').attr('href', 'detailresep.php?id=' + item.resep_id).text(item.nama_resep);
+            h3.append(h3Link);
+
+            var form = $('<form>').attr('method', 'post').attr('action', 'fungsi/bookmark.php');
+            var hiddenResepId = $('<input>').attr('type', 'hidden').attr('name', 'resep_id').val(item.resep_id);
+            var hiddenUserId = $('<input>').attr('type', 'hidden').attr('name', 'user_id').val(<?php echo $_SESSION['user_id']; ?>);
+            var submitButton = $('<input>').addClass('button_1').attr('type', 'submit').attr('name', 'tambahBookmark').val('Tambah Bookmark');
+            form.append(hiddenResepId).append(hiddenUserId).append(submitButton);
+
+            products.append(link).append(h3).append(form);
+            gridItem.append(products);
+            resultsContainer.append(gridItem);
+        });
+    }
+});
+</script>
 
 <html lang="en">
 <head>
@@ -76,7 +114,8 @@ $result = mysqli_query($data, $sql);
 			</li>
 		  </ul>
 		  <ul class="navbar_1">
-          <input type="text" class="navbar-header" id="searchInput" onkeyup="search()" placeholder="Search..">
+          <input type="text" class="navbar-header" id="searchInput" placeholder="Search..">
+          <div id="searchResults"></div>
 		  </ul>
 			    </div><!-- /.navbar-collapse -->
      <!-- /.container-fluid -->
@@ -87,7 +126,7 @@ $result = mysqli_query($data, $sql);
         <p>Resep yang sering dilihat</p>
         <div class="grid-container">
             <?php
-
+            
             while ($row = mysqli_fetch_assoc($result)) {
                 echo '<div class="grid-item">';
                 echo '<div class="products_2">';
