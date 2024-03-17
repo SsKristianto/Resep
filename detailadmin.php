@@ -82,35 +82,32 @@ $resep = mysqli_fetch_assoc($result);
   </div>
  </div>
 </section>
+
 <section id="products_main" class="clearfix">
- <div class="col-sm-6">
-  <div class="products_main_1">
-   <h2><?php echo $resep['nama_resep']; ?></h2>
-        
-        <p><?php echo $resep['deskripsi_resep']; ?></p>
-        <h3>Bahan:</h3>
-        <ul>
-            <?php
-            // Misalkan bahan disimpan dalam format string di database, kita perlu memisahkannya
-            $bahan = explode(',', $resep['bahan']);
-            foreach ($bahan as $item) {
-                echo '<li>' . trim($item) . '</li>';
-            }
-            ?>
-        </ul>
-  </div>
- </div>
- <div class="col-sm-6">
-  <div class="products_main_2">
-    <center>
-   <a href="#"><img src="<?php echo $resep['gambar']; ?>" alt="Image"></a>
-    </center>
-  </div>
- </div>
+    <div class="col-sm-6">
+    <div class="products_main_1">
+            <h2><?php echo $resep['nama_resep']; ?></h2>
+            
+            <p><?php echo $resep['deskripsi_resep']; ?></p>
+            <h3>Bahan:</h3>
+            <ul>
+                <?php
+                $bahan = explode(',', $resep['bahan']);
+                foreach ($bahan as $item) {
+                    echo '<li>' . trim($item) . '</li>';
+                }
+                ?>  
+            </ul>
+    </div>
+    </div>
+    <div class="col-sm-6">
+    <div class="products_main_2">
+        <center>
+        <a href="#"><img src="<?php echo $resep['gambar']; ?>" alt="Image"></a>
+        </center>
+    </div>
+    </div>
 </section>
 
-    <footer class="footer-user">
-        <p>INI FOOTER</p>
-    </footer>
 </body>
 </html>

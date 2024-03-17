@@ -87,7 +87,7 @@ $resep = mysqli_fetch_assoc($result);
   <div class="products_main_1">
    <h2><?php echo $resep['nama_resep']; ?></h2>
         
-    
+
         <p><?php echo $resep['deskripsi_resep']; ?></p>
 
         <h3>Bahan:</h3>
@@ -113,8 +113,5 @@ $resep = mysqli_fetch_assoc($result);
 
 </section>
 
-    <footer class="footer-user">
-        <p>INI FOOTER</p>
-    </footer>
 </body>
 </html>
