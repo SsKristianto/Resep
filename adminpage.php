@@ -104,8 +104,26 @@ $result = mysqli_query($data, $sql);
         </div>
     </div>
 
-    <footer class="footer-admin">
-        <p>INI FOOTER</p>
+    <footer class="footer">
+    <div class="footer-left">
+            <div class="logo">
+                <img src="gambar/ayamgoreng33.jpeg" alt="Logo 1">
+                <img src="gambar/3.jpg" alt="Logo 2">
+            </div>
+            <div class="logo">
+                <img src="gambar/kue nagasari 6.jpg" alt="Logo 3">
+                <img src="gambar/Kue_Ape (2).jpg" alt="Logo 4">
+            </div>
+        </div>
+        <div class="footer-center">
+            <h4 class="judul">Tentang Kami</h4>
+            <p class="penjelasan">Selamat datang di Rasakan Aroma-Kuliner Kreatif, kami berkomitmen untuk memberikan Anda akses ke beragam resep makanan sehat dan lezat yang dapat Anda coba di rumah. Kami percaya bahwa memasak adalah kegiatan yang menyenangkan dan bermanfaat, dan kami ingin memudahkan Anda menemukan inspirasi baru setiap hari.</p>
+        </div>
+        <div class="footer-right">
+            <h4 class="judul">Kontak</h4>
+            <p>No. Telepon: 123-456-789</p>
+            <p>Email: info@nutrifood.com</p>
+        </div>
     </footer>
 
 </body>

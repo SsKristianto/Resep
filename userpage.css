@@ -92,15 +92,6 @@ body {
   margin-top: 5px;
 }
 
-
-.footer-user {
-  background-color: blue;
-  color: red;
-  padding: 10px;
-  font-weight: bold;
-  font-size: normal;
-}
-
 .konten-bookmark {
   background-color: #f4f4f4;
   padding: 20px;
@@ -115,4 +106,53 @@ body {
   font-weight: bold;
   font-size: normal;
   flex-grow: 1;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; /* Jarak antara kolom */
+  background: url('background/bg_bot_img.jpg') no-repeat; 
+  background-size: cover;
+  background-position: center ;
+  padding: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 100px; /* Sesuaikan dengan ukuran logo Anda */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.judul {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.footer-center p {
+
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.footer-right p {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
 }

@@ -13,17 +13,22 @@ if(isset($_POST['register']))
     $role='user';
     $password=$_POST['password'];
 
-    $sql="INSERT INTO user (name,username,role,password) VALUES
-    ('$name','$username','$role','$password')";
-
-    $result=mysqli_query($data,$sql);
-
-    if($result)
-    {
-        header('location:login.php');
+    // Memastikan semua input diperlukan telah diisi
+    if(!empty($name) && !empty($username) && !empty($password)){
+        $sql="INSERT INTO user (name,username,role,password) VALUES
+        ('$name','$username','$role','$password')";
+    
+        $result=mysqli_query($data,$sql);
+    
+        if($result)
+        {
+            header('location:login.php');
+        }
     }
+    
 }
 ?>
+
 
 
 <html lang="en">

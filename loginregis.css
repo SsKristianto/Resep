@@ -5,7 +5,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
+.web {
     display: flex;
     justify-content: center;
     align-items: center;

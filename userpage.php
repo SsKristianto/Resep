@@ -18,7 +18,26 @@ $result = mysqli_query($data, $sql);
 ?>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-<script>
+
+    <script>
+        function search() {
+            var input, filter;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+
+            var gridItems = document.getElementsByClassName("grid-item");
+            for (var i = 0; i < gridItems.length; i++) {
+                var title = gridItems[i].getElementsByTagName("h3")[0].innerText.toUpperCase();
+                if (title.indexOf(filter) > -1) {
+                    gridItems[i].style.display = "";
+                } else {
+                    gridItems[i].style.display = "none";
+                }
+            }
+        }
+</script>
+
+<!-- <script>
         $(document).ready(function() {
     $('#searchInput').on('input', function() {
         var keyword = $(this).val();
@@ -71,7 +90,7 @@ $result = mysqli_query($data, $sql);
         });
     }
 });
-</script>
+</script> -->
 
 <html lang="en">
 <head>
@@ -111,11 +130,10 @@ $result = mysqli_query($data, $sql);
 					<li><a href="userprofile.php">Profile</a></li>
 					<li><a href="userbookmark.php">Bookmark</a></li>
 					<li><a href="fungsi/logout.php">Logout</a></li>
-			</li>
+                    </li>
 		  </ul>
 		  <ul class="navbar_1">
-          <input type="text" class="navbar-header" id="searchInput" placeholder="Search..">
-          <div id="searchResults"></div>
+          <input type="text" class="navbar-header" id="searchInput" onkeyup="search()" placeholder="Search..">
 		  </ul>
 			    </div><!-- /.navbar-collapse -->
      <!-- /.container-fluid -->
@@ -144,8 +162,26 @@ $result = mysqli_query($data, $sql);
         </div>
     </div>
 
-    <footer class="footer-user">
-        <p>INI FOOTER</p>
+    <footer class="footer">
+    <div class="footer-left">
+            <div class="logo">
+                <img src="gambar/ayamgoreng33.jpeg" alt="Logo 1">
+                <img src="gambar/3.jpg" alt="Logo 2">
+            </div>
+            <div class="logo">
+                <img src="gambar/kue nagasari 6.jpg" alt="Logo 3">
+                <img src="gambar/Kue_Ape (2).jpg" alt="Logo 4">
+            </div>
+        </div>
+        <div class="footer-center">
+            <h4 class="judul">Tentang Kami</h4>
+            <p class="penjelasan">Selamat datang di Rasakan Aroma-Kuliner Kreatif, kami berkomitmen untuk memberikan Anda akses ke beragam resep makanan sehat dan lezat yang dapat Anda coba di rumah. Kami percaya bahwa memasak adalah kegiatan yang menyenangkan dan bermanfaat, dan kami ingin memudahkan Anda menemukan inspirasi baru setiap hari.</p>
+        </div>
+        <div class="footer-right">
+            <h4 class="judul">Kontak</h4>
+            <p>No. Telepon: 123-456-789</p>
+            <p>Email: info@nutrifood.com</p>
+        </div>
     </footer>
 
 </body>
