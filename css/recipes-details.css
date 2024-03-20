@@ -216,15 +216,97 @@ Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152
 /********************* people_end ****************/
 /********************* products_main ****************/
 #products_main{
- padding-top:30px;
- padding-bottom:30px;
- box-shadow: rgba(232, 8, 8, 0.15) 0px 4px 4px 0px; 
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-left:60px;
+  box-shadow: rgba(232, 8, 8, 0.15) 0px 4px 4px 0px; 
+  }
+ .products_main_1 h2{
+  color: #c51c0a;
+  font-weight: bold;
+  padding-bottom:16px;
+  }
+ 
+/* Heading and paragraph styling */
+ #products_main {
+   background-color: #f5f5f5;
+   
+   text-align: justify;
  }
-.products_main_1 h2{
- color: #c51c0a;
- font-weight: bold;
- padding-bottom:16px;
+ 
+/* Section styling */
+ .products_main_1 h2 {
+   font-size: 34px;
+   line-height: 1.2;
  }
+ 
+ .products_main_1 p {
+   font-size: 16px;
+   line-height: 1.5;
+   padding: 5px;
+ }
+ 
+ .products_main_1 h3 {
+   padding: 5px;
+ }
+ 
+ .products_main_1 ul li {
+  padding: 5px;
+}
+
+ /* Image styling */
+ .products_main_2 img {
+   border: 10px solid #195791;
+   padding: 5px;
+   transition: transform 0.3s;
+   max-width: 100%; /* Ensure images don't exceed their container */
+   height: auto; /* Maintain aspect ratio */
+   width: 550px; /* Set a fixed width for the images */
+ }
+ 
+ 
+ /* Column margin */
+ .col-sm-6 {
+   margin-bottom: 20px;
+ }
+ 
+
+ 
+ 
+ /* Hover effects for text */
+
+ .products_main_1 h2,
+ .products_main_1 p,
+ .products_main_1 h3,
+ .products_main_1 ul li {
+   transition: transform 0.3s;
+   transform-origin: left;
+   position: relative; /* Set position to relative */
+  z-index: 1; /* Set z-index higher than other elements */
+ }
+ 
+ .products_main_1 h2:hover,
+ .products_main_1 p:hover,
+ .products_main_1 h3:hover {
+  border: 3px solid #195791;
+   background-color: skyblue;
+   transform: scale(1.1); /* Make paragraphs and h3 elements slightly larger on hover */
+ }
+ 
+ .products_main_1 ul li:hover {
+  transform: scale(1.2);
+  border: 3px solid green;
+   background-color: #1cff01;
+ }
+ 
+ 
+ 
+ /* Hover effect for images */
+ .products_main_2 img:hover {
+   transform: scale(1.1); /* Make images larger on hover */
+   border-color: skyblue; /* Change border color on hover */
+ }
+ 
 /********************* products_main_end ****************/
 /********************* updates ****************/
 #updates{ 
