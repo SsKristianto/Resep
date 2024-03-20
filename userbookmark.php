@@ -57,9 +57,6 @@ $bookmark_result = lihatBookmark($data, $user_id);
 					<li><a href="fungsi/logout.php">Logout</a></li>
 			</li>
 		  </ul>
-		  <ul class="navbar_1">
-          <input type="text" class="navbar-header" placeholder="Search..">
-		  </ul>
 			    </div><!-- /.navbar-collapse -->
      <!-- /.container-fluid -->
 	</nav>

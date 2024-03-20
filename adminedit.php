@@ -67,9 +67,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['select_resep'])) {
 					<li><a href="fungsi/logout.php">Logout</a></li>
 			</li>
 		  </ul>
-		  <ul class="navbar_1">
-          <input type="text" class="navbar-header" placeholder="Search..">
-		  </ul>
 			    </div><!-- /.navbar-collapse -->
      <!-- /.container-fluid -->
 	</nav>
